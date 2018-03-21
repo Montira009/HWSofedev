@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.montira.hwsofedev.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Bangtan Boys"
+            android:fontFamily="casual"
+            android:textColor="#008e76"
+            android:textSize="40sp"
+            android:background="@drawable/drawable_shap"/>
+
+        <ImageView
+            android:id="@+id/bts"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/bts" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bts"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member"
+                android:textColor="#00b0ff"
+                android:textSize="30sp"
+                android:fontFamily="casual"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_RapMonster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="RapMonster (김남준)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Jin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Jin (진)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Suga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Suga (슈가)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_JHope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="J-Hope (제이홉)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Jimin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Jimin (지민)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="V (뷔)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Jungkook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Jungkook (정국)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Joongki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Song Joongki (송중기)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Minho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text=" Lee Min-ho (이민호)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_Jongsuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Lee Jong-Suk (이종석)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Young Member"
+                android:textColor="#00b0ff"
+                android:textSize="30sp"
+                android:fontFamily="casual"/>
+
+            <ImageView
+                android:id="@+id/btss"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/jk"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_Jimin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Jimin" />
+
+                <RadioButton
+                    android:id="@+id/radio_V"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="V" />
+
+                <RadioButton
+                    android:id="@+id/radio_Jungkook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Jungkook" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Leader"
+                android:textColor="#00b0ff"
+                android:textSize="30sp"
+                android:fontFamily="casual"/>
+
+            <ImageView
+                android:id="@+id/btss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/rm" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_RapMonster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="RapMonster" />
+
+                <RadioButton
+                    android:id="@+id/radio_Jin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Jin" />
+
+                <RadioButton
+                    android:id="@+id/radio_Suga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Suga" />
+
+                <RadioButton
+                    android:id="@+id/radio_JHope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="J-Hope" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="150sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/drawable_shap"
+                android:text="Thankyou" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
